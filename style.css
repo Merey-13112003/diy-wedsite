@@ -1,0 +1,197 @@
+/* Используем разные единицы: px, %, rem (Требование Части Б) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #4a6741; /* Зеленый оттенок для DIY темы */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Навигация */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Двухколоночный макет через Float (Требование Части Б) */
+main {
+    float: left;
+    width: 65%;
+    margin: 2%;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd; /* Box Model: Border */
+}
+
+aside {
+    float: right;
+    width: 25%;
+    margin: 2% 2% 2% 0;
+    padding: 15px;
+    background: #ebebeb;
+    border-radius: 8px;
+}
+
+/* Очистка потока (Clear), чтобы футер был внизу */
+footer {
+    clear: both;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative; /* Positioning: Relative */
+}
+
+/* Стили для таблиц и форм */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box; /* Важно для Box Model */
+}
+/* Стили для карточек проектов */
+.projects-grid {
+    display: block; /* Используем стандартный поток */
+}
+
+.project-card {
+    float: left;            /* Эффект колонок */
+    width: 45%;            /* Относительная ширина */
+    margin: 2%;            /* Отступы Box Model */
+    padding: 1rem;         /* Внутренний отступ */
+    border: 1px solid #ccc; /* Рамка */
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Стили для формы */
+.styled-form {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #4a6741; /* Акцентная рамка */
+}
+
+.styled-form input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 90%;
+    border: 1px solid #ddd;
+}
+
+.styled-form button {
+    background-color: #4a6741;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.styled-form button:hover {
+    background-color: #3e5636;
+}
+
+/* Очистка для футера */
+footer {
+    clear: both; 
+}
+/* Увеличиваем основную часть, где лежат картинки */
+main {
+    float: left;
+    width: 70%;      /* Было 65%, увеличили до 70% */
+    margin: 1%;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box; /* Чтобы padding не раздувал ширину */
+}
+
+/* Уменьшаем боковую панель */
+aside {
+    float: right;
+    width: 22%;      /* Было 25%, немного сузили */
+    margin: 1%;
+    padding: 15px;
+    background: #ebebeb;
+    box-sizing: border-box;
+}
+
+/* Настраиваем карточки проектов внутри main */
+.project-card {
+    float: left;
+    width: 46%;      /* Сделаем 2 колонки вместо 3, чтобы фото были крупнее */
+    margin: 2%;      /* Box Model: Margin  */
+    padding: 10px;   /* Box Model: Padding  */
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Исправляем высоту картинок, чтобы они не вытягивались */
+.project-card img {
+    width: 100%;
+    height: auto;    /* Убираем фиксированную высоту 250px, если она была */
+    display: block;
+}
+/* Стили для таблицы (Box Model: Border, Padding) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: sans-serif;
+}
+
+table th, table td {
+    border: 2px solid #4a6741;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4a6741;
+    color: white;
+}
+
+/* Пример использования ID селектора (Requirement) */
+#workshop-info {
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+}
