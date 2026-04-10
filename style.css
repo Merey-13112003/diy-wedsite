@@ -195,3 +195,81 @@ table th {
     background-color: #fdfdfd;
     border-radius: 8px;
 }
+/* --- PART B: Colors & Fonts --- */
+body {
+    /* 1. Sans-serif шрифт */
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    color: #333333; /* Основной цвет текста */
+}
+
+h2 {
+    /* 2. Serif шрифт */
+    font-family: 'Georgia', serif; 
+    font-weight: bold;
+    font-style: italic;
+}
+
+.profile-description {
+    /* 3. Monospace шрифт */
+    font-family: 'Courier New', monospace; 
+    font-size: 14px;
+}
+
+/* Hover эффекты для ссылок */
+nav ul li a:hover {
+    color: #ff9800; /* Оранжевый при наведении */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- PART A: Selector Priority --- */
+/* Селектор элемента (низший) */
+p { color: black; }
+
+/* Селектор класса (средний) */
+.standard-text { color: blue; }
+
+/* Селектор ID (высший среди CSS) */
+#unique-text { color: green; } 
+
+
+/* --- PART C: Spacing & Alignment --- */
+.priority-demo {
+    margin: 30px; /* Внешний отступ */
+    padding: 20px; /* Внутренний отступ */
+    line-height: 1.8; /* Межстрочный интервал для читаемости */
+    border: 1px solid #ddd;
+}
+
+.section-title {
+    text-align: center; /* Центрирование */
+}
+
+.profile-description {
+    text-align: justify; /* Выравнивание по ширине */
+}
+
+/* --- PART D: Profile Card Practical --- */
+.profile-card {
+    width: 280px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #4a6741;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #ffffff;
+    transition: 0.4s; /* Плавность эффекта */
+}
+
+/* Hover эффект для карточки */
+.profile-card:hover {
+    border-color: #ff9800; /* Смена цвета рамки */
+    background-color: #fff9f0; /* Смена фона */
+    transform: scale(1.02); /* Легкое увеличение */
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}

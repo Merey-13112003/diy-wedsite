@@ -37,15 +37,25 @@
         </nav>
     </header>
 
-    <main>
-        <main>
-            <div class="hero-banner">
-    <img src="assets/diy-main.jpg" alt="Banner" style="width:100%; height:300px; object-fit:cover;">
-    <div class="promo-badge">NEW!</div>
-</div>
-    <section class="projects-container">
-        <h2>Галерея моих работ</h2>
-        <p>Здесь представлены изделия из дерева и камня, которые легко повторить дома.</p>
+<main>
+    <section class="priority-demo">
+        <h2 id="priority-header" class="common-title" style="color: darkred;">
+            Заголовок с Inline стилем (Красный перебьет всё)
+        </h2>
+        <p id="unique-text" class="standard-text">
+            Этот текст проверит приоритет ID над классом.
+        </p>
+    </section>
+
+    <section class="profile-section">
+        <div class="profile-card" id="my-profile">
+            <img src="assets/Master1.jpg" alt="Ваше фото" class="profile-photo">
+            <h3 class="profile-name">Merey Askanova</h3>
+            <p class="profile-description">Занимаюсь DIY проектами более 5 лет. Люблю дерево и декор.</p>
+        </div>
+    </section>
+    
+    </main>
 
         <article class="project-card">
             <figure>
